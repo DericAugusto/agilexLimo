@@ -16,5 +16,5 @@ The project is a ROS application developed in python to control a agilexLimo rob
 
 Group members :
 - Clément ETIENNE,
-- Déric Augusto FRANÇA DE SALES,
+- Déric de SALES,
 - Hubert de MARCILLAC.
