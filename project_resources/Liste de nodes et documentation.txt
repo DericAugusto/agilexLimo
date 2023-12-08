@@ -6,8 +6,6 @@ https://github.com/YDLIDAR/ydlidar_ros2
 -moteurs(4nodes)
 https://github.com/mdrwiega/md_drive_ros
 
--roues(4nodes)
-
 -caméera de profondeur Dabaï RealSenseD435
 https://intel.github.io/robot_devkit_doc/pages/rs.html (RealSense)
 
