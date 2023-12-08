@@ -19,3 +19,7 @@ https://github.com/CNURobotics/openni2_camera
 
 
 https://github.com/westonrobot/limo_ros2 (un peu de tout du robot)
+
+De quoi écrire des nodes qui envoient et reçoient en même temps:
+  https://automaticaddison.com/how-to-write-a-ros2-publisher-and-subscriber-python-foxy/
+  https://juejin.cn/s/ros%20publisher%20subscriber%20same%20node%20python
