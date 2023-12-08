@@ -7,7 +7,7 @@ Sujets à node:
 -roues(4nodes)
 
 -caméera de profondeur Dabaï RealSenseD435
-https://intel.github.io/robot_devkit_doc/pages/rs.html
+https://intel.github.io/robot_devkit_doc/pages/rs.html (RealSense)
 
 - caméra simple Orbbec astra Dabaï 
 https://github.com/CNURobotics/openni2_camera
