@@ -11,3 +11,5 @@ Sujets à node :
 - caméra simple Orbbec astra Dabaï : https://github.com/CNURobotics/openni2_camera
 
 - récupération globale des données collectées
+
+https://github.com/westonrobot/limo_ros2 (un peu de tout du robot)
