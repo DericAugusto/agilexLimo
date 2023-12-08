@@ -1,0 +1,15 @@
+Sujets à node:
+
+-LIDAR
+
+-moteurs(4nodes)
+
+-roues(4nodes)
+
+-caméera de profondeur Dabaï RealSenseD435
+https://intel.github.io/robot_devkit_doc/pages/rs.html
+
+- caméra simple Orbbec astra Dabaï 
+https://github.com/CNURobotics/openni2_camera
+
+-récupération globale des données collectées
