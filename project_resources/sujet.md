@@ -1,4 +1,4 @@
-BE véhicule autonome
+# BE véhicule autonome
 
 Informations importantes :
 - Répartition en groupes de 3 personnes
@@ -6,7 +6,9 @@ Informations importantes :
 - Présentation finale de vos travaux le Mardi 23/01/2024 de 8h à 12h
 - Dépôt de votre projet sur Arche le Lundi 22/01/2024 avant minuit
 
-Formation commande de véhicules autonomes
+## Formations proposées dans le sujet :
+
+### Formation commande de véhicules autonomes
 
 Formation de 4h le 29 septembre 2023 de 8h à 12h. 
 
@@ -18,7 +20,7 @@ Cette formation permet d'acquérir les compétences suivantes :
 - la capacité à analyser vos lois de commandes afin d’obtenir certaines garanties théoriques ;
 - la capacité à simuler un véhicule de type voiture et sa commande et à interpréter les résultats.
 
-Formation programmation ROS (Robot Operating System)
+### Formation programmation ROS (Robot Operating System)
 
 Formation de 8h les mardi 03/10/2023 et vendredi 06/10/2023 de 8h à 12h.
 
@@ -31,21 +33,3 @@ Cette formation permet d'acquérir les compétences suivantes :
 - Afficher et manipuler les différents objets propres à ROS ;
 - Programmer en Python des nodes, topics, paramètres, etc ;
 - Utiliser des outils (Rviz et RQt) pour visualiser les données dans l’espace en 3D, afficher les informations du système, tracer des courbes, etc.
-
-Ressources :
-
-Présentation site officiel AgileX LIMO : https://global.agilex.ai/products/limo
-
-GitHub documentaitons officielles LIMO : https://github.com/agilexrobotics/limo-doc/tree/master
-
-Documentation sur AgileX LIMO (fournisseur Trossen Robotics) :
-
-Documentations ROS 1 (Eloquent) : https://docs.trossenrobotics.com/agilex_limo_docs/
-
-Documentaiton ROS 2 (Humble) : https://docs.ros.org/en/eloquent/index.html#
-
-Documentation Nav2 : https://docs.ros.org/en/humble/index.html
-
-Documentation Rviz : https://navigation.ros.org/
-
-ROS v1 dans le robo : https://wiki.ros.org/rviz/UserGuide

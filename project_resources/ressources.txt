@@ -1,0 +1,15 @@
+Présentation site officiel AgileX LIMO : https://global.agilex.ai/products/limo
+
+GitHub documentaitons officielles LIMO : https://github.com/agilexrobotics/limo-doc/tree/master
+
+Documentation sur AgileX LIMO (fournisseur Trossen Robotics) :
+
+Documentations ROS 1 (Eloquent) : https://docs.trossenrobotics.com/agilex_limo_docs/
+
+Documentaiton ROS 2 (Humble) : https://docs.ros.org/en/eloquent/index.html#
+
+Documentation Nav2 : https://docs.ros.org/en/humble/index.html
+
+Documentation Rviz : https://navigation.ros.org/
+
+ROS v1 dans le robo : https://wiki.ros.org/rviz/UserGuide
