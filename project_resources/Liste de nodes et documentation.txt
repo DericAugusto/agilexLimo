@@ -1,15 +1,23 @@
-Sujets à node :
+Sujets à node:
 
-- LIDAR
+-LIDAR EAI X2L
+https://github.com/YDLIDAR/ydlidar_ros2
 
 -moteurs(4nodes)
+https://github.com/mdrwiega/md_drive_ros
 
-- roues(4nodes)
+-roues(4nodes)
 
-- caméra de profondeur Dabaï RealSenseD435 : https://intel.github.io/robot_devkit_doc/pages/rs.html
+-caméera de profondeur Dabaï RealSenseD435
+https://intel.github.io/robot_devkit_doc/pages/rs.html (RealSense)
 
-- caméra simple Orbbec astra Dabaï : https://github.com/CNURobotics/openni2_camera
+- caméra simple Orbbec astra Dabaï 
+https://github.com/CNURobotics/openni2_camera
 
-- récupération globale des données collectées
+-récupération globale des données collectées
+
+
+
+
 
 https://github.com/westonrobot/limo_ros2 (un peu de tout du robot)
