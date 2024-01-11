@@ -1,4 +1,7 @@
 ip du robot : 100.75.203/25
 
-
 ip du robot 2 : 100.75.210
+
+folder where the vehicle driver is located : cd agilex_ws/src/limo_ros/limo_base
+
+

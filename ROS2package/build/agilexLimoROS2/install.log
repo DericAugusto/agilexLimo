@@ -1,5 +1,7 @@
 /home/dericaugusto/github_rep/agilexLimo/ROS2package/install/agilexLimoROS2/lib/python3.10/site-packages/agilexLimoROS2/__init__.py
+/home/dericaugusto/github_rep/agilexLimo/ROS2package/install/agilexLimoROS2/lib/python3.10/site-packages/agilexLimoROS2/sensors_publisher_node.py
 /home/dericaugusto/github_rep/agilexLimo/ROS2package/install/agilexLimoROS2/lib/python3.10/site-packages/agilexLimoROS2/__pycache__/__init__.cpython-310.pyc
+/home/dericaugusto/github_rep/agilexLimo/ROS2package/install/agilexLimoROS2/lib/python3.10/site-packages/agilexLimoROS2/__pycache__/sensors_publisher_node.cpython-310.pyc
 /home/dericaugusto/github_rep/agilexLimo/ROS2package/install/agilexLimoROS2/share/ament_index/resource_index/packages/agilexLimoROS2
 /home/dericaugusto/github_rep/agilexLimo/ROS2package/install/agilexLimoROS2/share/agilexLimoROS2/package.xml
 /home/dericaugusto/github_rep/agilexLimo/ROS2package/install/agilexLimoROS2/lib/python3.10/site-packages/agilexLimoROS2-0.0.0-py3.10.egg-info/top_level.txt
@@ -9,3 +11,4 @@
 /home/dericaugusto/github_rep/agilexLimo/ROS2package/install/agilexLimoROS2/lib/python3.10/site-packages/agilexLimoROS2-0.0.0-py3.10.egg-info/PKG-INFO
 /home/dericaugusto/github_rep/agilexLimo/ROS2package/install/agilexLimoROS2/lib/python3.10/site-packages/agilexLimoROS2-0.0.0-py3.10.egg-info/entry_points.txt
 /home/dericaugusto/github_rep/agilexLimo/ROS2package/install/agilexLimoROS2/lib/python3.10/site-packages/agilexLimoROS2-0.0.0-py3.10.egg-info/requires.txt
+/home/dericaugusto/github_rep/agilexLimo/ROS2package/install/agilexLimoROS2/lib/agilexLimoROS2/test_node

@@ -9,6 +9,7 @@ setup.py
 ../build/agilexLimoROS2/agilexLimoROS2.egg-info/top_level.txt
 ../build/agilexLimoROS2/agilexLimoROS2.egg-info/zip-safe
 agilexLimoROS2/__init__.py
+agilexLimoROS2/sensors_publisher_node.py
 resource/agilexLimoROS2
 test/test_copyright.py
 test/test_flake8.py
