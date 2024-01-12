@@ -2,7 +2,7 @@
 # coding=UTF-8
 from pylimo import limo
 import time
-limo=limo.LIMO()
+limo = limo.LIMO()
 limo.EnableCommand()
 while True:
     time.sleep(0.1)
