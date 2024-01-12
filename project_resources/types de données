@@ -1,0 +1,37 @@
+types de données
+
+linear velocity: 0.0
+type: <class 'float'>
+------------------------
+
+angular velocity: 0.0
+type: <class 'float'>
+------------------------
+
+steering angle: 0.0
+type: <class 'float'>
+------------------------
+
+lateral velocity: 0.0
+type: <class 'float'>
+------------------------
+
+control mode: 0
+type: <class 'int'>
+------------------------
+
+battery voltage: 0
+type: <class 'int'>
+------------------------
+
+error code: 0
+type: <class 'int'>
+------------------------
+
+data from accelerometer: (0.08, 653.71, 10.1)
+type: <class 'tuple'>
+------------------------
+
+gyroscope data: (655.26, 0.0, 0.0)
+type: <class 'tuple'>
+------------------------
