@@ -36,22 +36,14 @@ class DonneesVoiture(Node):
         #data12 = limo.GetIMUPitch() # ça ne marche pas
         #data13 = limo.GetIMURoll() # ça ne marche pas
         data = [data1,data2,data3,data4,data5,data7,data8,data9,data10]
-
-
-
-
-
-
-
         msg.data = data
         self.publisher_.publish(msg)
+        donnees = DonneesVoiture()
         self.get_logger().info('Publishing: "%s"' % msg.data)
         self.i += 1
 
 def main(args=None):
     rclpy.init(args=args)
-
-    donnees = DonneesVoiture()
 
     rclpy.spin(donnees)
 
