@@ -1,0 +1,27 @@
+[1.099s] Invoking command in '/home/dericaugusto/WSL_code/ros2_tutorial_youtube_ws/build/my_robot_controller': PYTHONPATH=/home/dericaugusto/WSL_code/ros2_tutorial_youtube_ws/build/my_robot_controller/prefix_override:/home/dericaugusto/WSL_code/ros2_tutorial_youtube_ws/install/my_robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/dericaugusto/WSL_code/ros2_tutorial_youtube_ws/build/my_robot_controller/build --no-deps install_data
+[1.682s] running develop
+[1.686s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[1.687s]   warnings.warn(
+[1.689s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.689s]   warnings.warn(
+[1.929s] running egg_info
+[1.929s] creating my_robot_controller.egg-info
+[1.930s] writing my_robot_controller.egg-info/PKG-INFO
+[1.930s] writing dependency_links to my_robot_controller.egg-info/dependency_links.txt
+[1.931s] writing entry points to my_robot_controller.egg-info/entry_points.txt
+[1.931s] writing requirements to my_robot_controller.egg-info/requires.txt
+[1.931s] writing top-level names to my_robot_controller.egg-info/top_level.txt
+[1.932s] writing manifest file 'my_robot_controller.egg-info/SOURCES.txt'
+[1.934s] reading manifest file 'my_robot_controller.egg-info/SOURCES.txt'
+[1.935s] writing manifest file 'my_robot_controller.egg-info/SOURCES.txt'
+[1.937s] running build_ext
+[1.937s] Creating /home/dericaugusto/WSL_code/ros2_tutorial_youtube_ws/install/my_robot_controller/lib/python3.10/site-packages/my-robot-controller.egg-link (link to .)
+[1.938s] 
+[1.939s] Installed /home/dericaugusto/WSL_code/ros2_tutorial_youtube_ws/build/my_robot_controller
+[1.939s] running install_data
+[1.939s] creating /home/dericaugusto/WSL_code/ros2_tutorial_youtube_ws/install/my_robot_controller/share/ament_index
+[1.940s] creating /home/dericaugusto/WSL_code/ros2_tutorial_youtube_ws/install/my_robot_controller/share/ament_index/resource_index
+[1.940s] creating /home/dericaugusto/WSL_code/ros2_tutorial_youtube_ws/install/my_robot_controller/share/ament_index/resource_index/packages
+[1.940s] copying resource/my_robot_controller -> /home/dericaugusto/WSL_code/ros2_tutorial_youtube_ws/install/my_robot_controller/share/ament_index/resource_index/packages
+[1.940s] copying package.xml -> /home/dericaugusto/WSL_code/ros2_tutorial_youtube_ws/install/my_robot_controller/share/my_robot_controller
+[1.976s] Invoked command in '/home/dericaugusto/WSL_code/ros2_tutorial_youtube_ws/build/my_robot_controller' returned '0': PYTHONPATH=/home/dericaugusto/WSL_code/ros2_tutorial_youtube_ws/build/my_robot_controller/prefix_override:/home/dericaugusto/WSL_code/ros2_tutorial_youtube_ws/install/my_robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/dericaugusto/WSL_code/ros2_tutorial_youtube_ws/build/my_robot_controller/build --no-deps install_data

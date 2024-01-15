@@ -1,0 +1,36 @@
+[1.005s] Invoking command in '/home/dericaugusto/WSL_code/ros2_tutorial_youtube_ws/build/my_robot_controller': PYTHONPATH=/home/dericaugusto/WSL_code/ros2_tutorial_youtube_ws/build/my_robot_controller/prefix_override:/home/dericaugusto/WSL_code/ros2_tutorial_youtube_ws/install/my_robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/dericaugusto/WSL_code/ros2_tutorial_youtube_ws/build/my_robot_controller/build
+[1.360s] running develop
+[1.360s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[1.360s]   warnings.warn(
+[1.362s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.362s]   warnings.warn(
+[1.587s] Removing /home/dericaugusto/WSL_code/ros2_tutorial_youtube_ws/install/my_robot_controller/lib/python3.10/site-packages/my-robot-controller.egg-link (link to .)
+[1.633s] Invoked command in '/home/dericaugusto/WSL_code/ros2_tutorial_youtube_ws/build/my_robot_controller' returned '0': PYTHONPATH=/home/dericaugusto/WSL_code/ros2_tutorial_youtube_ws/build/my_robot_controller/prefix_override:/home/dericaugusto/WSL_code/ros2_tutorial_youtube_ws/install/my_robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/dericaugusto/WSL_code/ros2_tutorial_youtube_ws/build/my_robot_controller/build
+[1.637s] Invoking command in '/home/dericaugusto/WSL_code/ros2_tutorial_youtube_ws/my_robot_controller': PYTHONPATH=/home/dericaugusto/WSL_code/ros2_tutorial_youtube_ws/build/my_robot_controller/prefix_override:/home/dericaugusto/WSL_code/ros2_tutorial_youtube_ws/install/my_robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/my_robot_controller build --build-base /home/dericaugusto/WSL_code/ros2_tutorial_youtube_ws/build/my_robot_controller/build install --record /home/dericaugusto/WSL_code/ros2_tutorial_youtube_ws/build/my_robot_controller/install.log --single-version-externally-managed
+[1.984s] running egg_info
+[1.985s] writing ../build/my_robot_controller/my_robot_controller.egg-info/PKG-INFO
+[1.986s] writing dependency_links to ../build/my_robot_controller/my_robot_controller.egg-info/dependency_links.txt
+[1.986s] writing entry points to ../build/my_robot_controller/my_robot_controller.egg-info/entry_points.txt
+[1.986s] writing requirements to ../build/my_robot_controller/my_robot_controller.egg-info/requires.txt
+[1.987s] writing top-level names to ../build/my_robot_controller/my_robot_controller.egg-info/top_level.txt
+[1.989s] reading manifest file '../build/my_robot_controller/my_robot_controller.egg-info/SOURCES.txt'
+[1.991s] writing manifest file '../build/my_robot_controller/my_robot_controller.egg-info/SOURCES.txt'
+[1.991s] running build
+[1.991s] running build_py
+[1.991s] copying my_robot_controller/my_first_node.py -> /home/dericaugusto/WSL_code/ros2_tutorial_youtube_ws/build/my_robot_controller/build/lib/my_robot_controller
+[1.991s] running install
+[1.992s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.992s]   warnings.warn(
+[1.992s] running install_lib
+[1.994s] creating /home/dericaugusto/WSL_code/ros2_tutorial_youtube_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller
+[1.994s] copying /home/dericaugusto/WSL_code/ros2_tutorial_youtube_ws/build/my_robot_controller/build/lib/my_robot_controller/__init__.py -> /home/dericaugusto/WSL_code/ros2_tutorial_youtube_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller
+[1.994s] copying /home/dericaugusto/WSL_code/ros2_tutorial_youtube_ws/build/my_robot_controller/build/lib/my_robot_controller/my_first_node.py -> /home/dericaugusto/WSL_code/ros2_tutorial_youtube_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller
+[1.995s] byte-compiling /home/dericaugusto/WSL_code/ros2_tutorial_youtube_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/__init__.py to __init__.cpython-310.pyc
+[1.996s] byte-compiling /home/dericaugusto/WSL_code/ros2_tutorial_youtube_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/my_first_node.py to my_first_node.cpython-310.pyc
+[1.996s] running install_data
+[1.997s] running install_egg_info
+[1.999s] Copying ../build/my_robot_controller/my_robot_controller.egg-info to /home/dericaugusto/WSL_code/ros2_tutorial_youtube_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller-0.0.0-py3.10.egg-info
+[2.000s] running install_scripts
+[2.030s] Installing test_node script to /home/dericaugusto/WSL_code/ros2_tutorial_youtube_ws/install/my_robot_controller/lib/my_robot_controller
+[2.030s] writing list of installed files to '/home/dericaugusto/WSL_code/ros2_tutorial_youtube_ws/build/my_robot_controller/install.log'
+[2.067s] Invoked command in '/home/dericaugusto/WSL_code/ros2_tutorial_youtube_ws/my_robot_controller' returned '0': PYTHONPATH=/home/dericaugusto/WSL_code/ros2_tutorial_youtube_ws/build/my_robot_controller/prefix_override:/home/dericaugusto/WSL_code/ros2_tutorial_youtube_ws/install/my_robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/my_robot_controller build --build-base /home/dericaugusto/WSL_code/ros2_tutorial_youtube_ws/build/my_robot_controller/build install --record /home/dericaugusto/WSL_code/ros2_tutorial_youtube_ws/build/my_robot_controller/install.log --single-version-externally-managed
