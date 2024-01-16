@@ -1,3 +1,6 @@
 *.ini
 *.json
 *:Zone.Identifier
+test.py
+log
+.vscode

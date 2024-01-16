@@ -49,7 +49,7 @@ class TurtleController(Node):
     
     
   def pose_callback(self, pose: Pose):
-    cmd = Twist () # message from the class Twist
+    cmd = Twist() # message from the class Twist
     
     # if the turtle is outside the square, turn right
     if pose.x > 9.0 or pose.x < 2.0 or pose.y > 9.0 or pose.y < 2.0:
