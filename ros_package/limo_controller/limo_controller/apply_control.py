@@ -54,7 +54,7 @@ def main(args=None):
   limo_instance.EnableCommand()
   
   apply_control_node = ApplyControl(limo_instance)
-  print("The commands are being applied to the vehicle!")
+  print("\nThe commands are being applied to the vehicle!\n")
   rclpy.spin(apply_control_node)
   
   apply_control_node.destroy_node()

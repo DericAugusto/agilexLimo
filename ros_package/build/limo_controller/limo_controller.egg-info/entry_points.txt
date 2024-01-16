@@ -1,3 +1,4 @@
 [console_scripts]
 apply_control = limo_controller.apply_control:main
 keyboard_controller = limo_controller.keyboard_controller:main
+turtle_monitor = limo_controller.turtle_monitor:main
