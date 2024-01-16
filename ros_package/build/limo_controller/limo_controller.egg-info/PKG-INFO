@@ -7,4 +7,5 @@ Maintainer-email: dericaugustofs@gmail.com
 License: TODO: License declaration
 Requires-Dist: setuptools
 Requires-Dist: rclpy
+Requires-Dist: pylimo
 Requires-Dist: pynput

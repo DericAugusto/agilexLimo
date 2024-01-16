@@ -2,26 +2,6 @@
 import rclpy  
 from rclpy.node import Node
 from geometry_msgs.msg import Twist
-"""
-This script creates a ROS2 node that publishes velocity commands to a turtle in 
-the turtlesim package to make it move in a circle.
-
-Classes:
---------
-DrawCircle - A ROS2 node that publishes velocity commands to a turtle.
-
-Methods:
---------
-__init__ - Initializes the node, publisher, and timer.
-send_velocity_command - Publishes a velocity command to the turtle.
-
-Functions:
-----------
-main - Initializes the ROS2 library, creates an instance of the DrawCircle node,
-spins the node so it can send and receive messages, and then shuts down the ROS2
-library when the node is done.
-"""
-
 
 class DrawCircle(Node):
   def __init__(self):

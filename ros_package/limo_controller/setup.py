@@ -14,6 +14,7 @@ setup(
     install_requires=[
         'setuptools',
         'rclpy',
+        'pylimo',
         'pynput',  # Add your non-ROS dependencies here
         # Add any other package dependencies here
     ],
@@ -26,6 +27,7 @@ setup(
     entry_points={
         'console_scripts': [
             "keyboard_controller = limo_controller.keyboard_controller:main",
+            "apply_control = limo_controller.apply_control:main"
         ],
     },
 )

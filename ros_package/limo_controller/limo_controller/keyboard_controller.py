@@ -3,17 +3,41 @@ import rclpy
 from rclpy.node import Node
 from pynput import keyboard
 from std_msgs.msg import Float32 
+"""
+keyboard_controller.py
+
+This module contains the VehicleControlNode class which is a ROS2 node for 
+controlling a vehicle using keyboard inputs.
+It uses the pynput library to listen for keyboard events and publishes the 
+linear velocity and steering angle commands
+to the 'linear_velocity' and 'steering_angle' topics respectively.
+
+Classes:
+--------
+VehicleControlNode(Node): A ROS2 node for controlling a vehicle using keyboard 
+inputs.
+
+Methods:
+--------
+publish_control_command(): Publishes the current linear velocity and steering 
+angle as Float32 messages.
+on_press(key): Handles the keyboard press events. Updates the linear velocity 
+and steering angle based on the key pressed.
+"""
 
     
 class VehicleControlNode(Node):
   def __init__(self):
     super().__init__('vehicle_control_node')
     # Publishers for linear velocity and steering angle
-    self.linear_vel_publisher = self.create_publisher(Float32, 'linear_velocity', 10)
-    self.steering_angle_publisher = self.create_publisher(Float32, 'steering_angle', 10)
+    self.linear_vel_publisher = self.create_publisher(
+      Float32, 'linear_velocity', 10)
+    self.steering_angle_publisher = self.create_publisher(
+      Float32, 'steering_angle', 10)
     self.linear_vel = 0.0
     self.steering_angle = 0.0
-    self.listener = keyboard.Listener(on_press=self.on_press, on_release=self.on_release)
+    self.listener = keyboard.Listener(
+      on_press=self.on_press, on_release=self.on_release)
     self.listener.start()
     self.timer = self.create_timer(0.1, self.publish_control_command)
 
