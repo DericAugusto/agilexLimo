@@ -5,3 +5,14 @@ test.py
 log
 .vscode
 colcon_command_prefix_setup_py.sh.env
+colcon_build.rc
+colcon_command_prefix_setup_py.sh
+colcon_last_build_path.txt
+colcon_metadata
+colcon_cd.sh
+colcon_prefix_path.sh
+colcon_result.sh
+colcon.workspace.local.yml
+colcon.pkg
+__pycache__
+sitecustomize.cpython-310.pyc

@@ -63,14 +63,14 @@ class TurtleMonitor(Node):
     
     # logging the turtle position, linear velocity, and steering angle
     self.get_logger().info(
-      "turtle position : (" + str(pose.x) + ", " + str(pose.y) + ")\n" +
+      "\nturtle position : (" + str(round(pose.x, 3)) + ", " + str(round(pose.y, 3)) + ")\n" +
       "linear velocity of vehicle : " + str(self.linear_velocity) + "\n" +
       "steering angle of vehicle : " + str(self.steering_angle) + "\n"
     )
     
     # publishing the vehicle commands
-    cmd.linear.x = self.linear_velocity_subscriber
-    cmd.angular.z = self.steering_angle_subscriber
+    cmd.linear.x = self.linear_velocity
+    cmd.angular.z = self.steering_angle
     
     # publishing to turtlesim
     self.cmd_vel_pub.publish(cmd)
