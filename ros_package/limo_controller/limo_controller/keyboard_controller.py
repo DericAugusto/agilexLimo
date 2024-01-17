@@ -1,8 +1,4 @@
 #!/usr/bin/env python3
-import rclpy
-from rclpy.node import Node
-from pynput import keyboard
-from std_msgs.msg import Float32 
 """
 keyboard_controller.py
 
@@ -24,8 +20,12 @@ angle as Float32 messages.
 on_press(key): Handles the keyboard press events. Updates the linear velocity 
 and steering angle based on the key pressed.
 """
+import rclpy
+from rclpy.node import Node
+from pynput import keyboard
+from std_msgs.msg import Float32 
 
-    
+
 class VehicleControlNode(Node):
   def __init__(self):
     super().__init__('vehicle_control_node')

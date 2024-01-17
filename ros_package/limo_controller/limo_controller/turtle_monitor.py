@@ -1,10 +1,5 @@
 #!/usr/bin/env python3
 # coding=UTF-8
-import rclpy  
-from rclpy.node import Node
-from std_msgs.msg import Float32
-from turtlesim.msg import Pose
-from geometry_msgs.msg import Twist
 """
 turtle_monitor.py
 
@@ -32,6 +27,12 @@ message.
 
 pose_callback(pose: Pose): Handles the received pose of the turtle.
 """
+import rclpy  
+from rclpy.node import Node
+from std_msgs.msg import Float32
+from turtlesim.msg import Pose
+from geometry_msgs.msg import Twist
+
 
 class TurtleMonitor(Node):
   def __init__(self):

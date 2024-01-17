@@ -1,10 +1,34 @@
 #!/usr/bin/env python3
+"""
+interface_controller.py
+
+This module contains the VehicleControlNode class which is a ROS2 node for 
+controlling a vehicle using a graphical user interface.
+It uses the tkinter library to create the interface and publishes the linear 
+velocity and steering angle commands
+to the 'linear_velocity' and 'steering_angle' topics respectively.
+
+Classes:
+--------
+VehicleControlNode(Node): A ROS2 node for controlling a vehicle using a 
+graphical user interface.
+
+Methods:
+--------
+publish_control_command(): Publishes the current linear velocity and steering 
+angle as Float32 messages.
+increment_linear_velocity(increment): Increments the linear velocity by the 
+given amount and publishes the updated command.
+increment_steering_angle(increment): Increments the steering angle by the given
+amount and publishes the updated command.
+"""
 import os
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Float32
 import tkinter as tk
 import threading
+
 
 class VehicleControlNode(Node):
   def __init__(self):
