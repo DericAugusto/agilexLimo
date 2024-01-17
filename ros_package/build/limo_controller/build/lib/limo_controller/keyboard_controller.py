@@ -1,22 +1,43 @@
 #!/usr/bin/env python3
-import sys
-import termios
-import tty
 import rclpy
 from rclpy.node import Node
 from pynput import keyboard
 from std_msgs.msg import Float32 
+"""
+keyboard_controller.py
+
+This module contains the VehicleControlNode class which is a ROS2 node for 
+controlling a vehicle using keyboard inputs.
+It uses the pynput library to listen for keyboard events and publishes the 
+linear velocity and steering angle commands
+to the 'linear_velocity' and 'steering_angle' topics respectively.
+
+Classes:
+--------
+VehicleControlNode(Node): A ROS2 node for controlling a vehicle using keyboard 
+inputs.
+
+Methods:
+--------
+publish_control_command(): Publishes the current linear velocity and steering 
+angle as Float32 messages.
+on_press(key): Handles the keyboard press events. Updates the linear velocity 
+and steering angle based on the key pressed.
+"""
 
     
 class VehicleControlNode(Node):
   def __init__(self):
     super().__init__('vehicle_control_node')
     # Publishers for linear velocity and steering angle
-    self.linear_vel_publisher = self.create_publisher(Float32, 'linear_velocity', 10)
-    self.steering_angle_publisher = self.create_publisher(Float32, 'steering_angle', 10)
+    self.linear_vel_publisher = self.create_publisher(
+      Float32, 'linear_velocity', 10)
+    self.steering_angle_publisher = self.create_publisher(
+      Float32, 'steering_angle', 10)
     self.linear_vel = 0.0
     self.steering_angle = 0.0
-    self.listener = keyboard.Listener(on_press=self.on_press, on_release=self.on_release)
+    self.listener = keyboard.Listener(
+      on_press=self.on_press, on_release=self.on_release)
     self.listener.start()
     self.timer = self.create_timer(0.1, self.publish_control_command)
 
@@ -46,29 +67,16 @@ class VehicleControlNode(Node):
       pass  # Keep the current steering angle value
 
 def main(args=None):
-  print('\nReading from keyboard\n---------------------------\n\
-    Use arrow keys to move the vehicle.')
+  rclpy.init(args=args)
   
-  # Save the terminal settings
-  fd = sys.stdin.fileno()
-  old_settings = termios.tcgetattr(fd)
-    
-  try:
-    # Set the terminal to raw mode
-    tty.setraw(sys.stdin.fileno())
-
-    rclpy.init(args=args)
-    vehicle_control_node = VehicleControlNode()
-    
-    rclpy.spin(vehicle_control_node)
-  except Exception as e:
-    print(e, file=sys.stderr)
-  finally:
-    # Restore the terminal settings
-    termios.tcsetattr(fd, termios.TCSADRAIN, old_settings)
-    vehicle_control_node.listener.stop()
-    vehicle_control_node.destroy_node()
-    rclpy.shutdown()
+  vehicle_control_node = VehicleControlNode()
+  print('\nReading from keyboard\n---------------------------\nUse\
+  arrow keys to move the vehicle.')
+  rclpy.spin(vehicle_control_node)
+  vehicle_control_node.listener.stop()
+  vehicle_control_node.destroy_node()
+  
+  rclpy.shutdown()
 
 if __name__ == '__main__':
   main()

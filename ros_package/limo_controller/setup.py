@@ -15,6 +15,9 @@ setup(
         'setuptools',
         'rclpy',
         'pylimo',
+        'tkinter',
+        'threading',
+        'multiprocessing',
         'pynput',  # Add your non-ROS dependencies here
         # Add any other package dependencies here
     ],
@@ -29,6 +32,7 @@ setup(
             "keyboard_controller = limo_controller.keyboard_controller:main",
             "apply_control = limo_controller.apply_control:main",
             "turtle_monitor = limo_controller.turtle_monitor:main",
+            "interface_controller = limo_controller.interface_controller:main"
         ],
     },
 )

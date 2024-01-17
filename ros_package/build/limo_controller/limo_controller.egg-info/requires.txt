@@ -1,4 +1,7 @@
 setuptools
 rclpy
 pylimo
+tkinter
+threading
+multiprocessing
 pynput

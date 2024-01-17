@@ -8,4 +8,7 @@ License: TODO: License declaration
 Requires-Dist: setuptools
 Requires-Dist: rclpy
 Requires-Dist: pylimo
+Requires-Dist: tkinter
+Requires-Dist: threading
+Requires-Dist: multiprocessing
 Requires-Dist: pynput

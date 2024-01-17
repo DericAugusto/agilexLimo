@@ -3,7 +3,9 @@ setup.cfg
 setup.py
 limo_controller/__init__.py
 limo_controller/apply_control.py
+limo_controller/interface_controller.py
 limo_controller/keyboard_controller.py
+limo_controller/test.py
 limo_controller/turtle_monitor.py
 limo_controller.egg-info/PKG-INFO
 limo_controller.egg-info/SOURCES.txt
