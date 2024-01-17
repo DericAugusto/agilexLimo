@@ -10,9 +10,7 @@ Professeurs :
 - Clément Fauvel : clement.fauvel@univ-lorraine.fr
 - Jérémie Kreiss : jeremie.kreiss@univ-lorraine.fr
 
-Third year project developed as part of the curriculum of the Digital Systems branch of the École nationale supérieure d’électricité et de mécanique in the Université de Lorraine (Vandœuvre-lès-Nancy - FR).
-
-The project is a ROS application developed in python to control a agilexLimo robot model.
+Curriculum-based third-year project at the École Nationale Supérieure d'Électricité et de Mécanique, Université de Lorraine (Vandœuvre-lès-Nancy, France), focusing on a Python-based ROS application for the control of an Agilex Limo robot model.
 
 Group members :
 - Clément ETIENNE,
