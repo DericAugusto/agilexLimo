@@ -59,3 +59,6 @@ def main(args=None):
   
   apply_control_node.destroy_node()
   rclpy.shutdown()
+  
+if __name__ == '__main__':
+  main()
