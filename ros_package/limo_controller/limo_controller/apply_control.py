@@ -24,7 +24,6 @@ from pylimo import limo
 class ApplyControl(Node):
   def __init__(self, limo_instance):
     super().__init__('apply_control')
-    super().init('apply_control')
     self.limo = limo_instance
     self.linear_velocity = 0.0
     self.steering_angle = 0.0
