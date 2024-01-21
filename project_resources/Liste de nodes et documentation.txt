@@ -15,9 +15,6 @@ https://github.com/CNURobotics/openni2_camera
 -récupération globale des données collectées
 
 
-
-
-
 https://github.com/westonrobot/limo_ros2 (un peu de tout du robot)
 
 De quoi écrire des nodes qui envoient et reçoient en même temps:

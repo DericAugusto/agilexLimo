@@ -29,10 +29,12 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "keyboard_controller = limo_controller.keyboard_controller:main",
-            "apply_control = limo_controller.apply_control:main",
-            "turtle_monitor = limo_controller.turtle_monitor:main",
-            "interface_controller = limo_controller.interface_controller:main"
+            "apply_control = limo_controller.node_apply_control:main",
+            "clicking_controller = limo_controller.node_clicking_controller:main",
+            "keyboard_controller = limo_controller.node_keyboard_controller:main",
+            "trajectory_controller = limo_controller.node_trajectory_controller:main",
+            "turtle_monitor = limo_controller.node_turtle_monitor:main",
+            # name_of_executable = package_name.file_name:main
         ],
     },
 )
