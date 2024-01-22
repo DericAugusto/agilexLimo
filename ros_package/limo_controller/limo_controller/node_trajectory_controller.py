@@ -8,6 +8,7 @@ import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Float32
 import threading
+import math
 
 class ControlTrajectoryNode(Node):
   def __init__(self):
@@ -229,6 +230,8 @@ class MapMarkerApp():
         self.current_path_index = i  # Save current index for resuming
         break
 
+      print(i)
+
       # Calculate the distance and direction to the next point
       dx = path[i][0] - self.canvas.coords(self.vehicle)[0]
       dy = path[i][1] - self.canvas.coords(self.vehicle)[1]
@@ -253,6 +256,54 @@ class MapMarkerApp():
     if self.current_path_index >= len(path):
       self.current_path_index = 0
 
+
+def calculate_velocity_commands(x_a, y_a, theta_a, x_star, y_star, theta_star, k_rho, k_alpha, k_beta):
+  """
+  Calculate the linear and angular velocity commands for a robot.
+
+  Parameters:
+  x_a, y_a, theta_a : Coordinates and orientation of the starting point A.
+  x_star, y_star, theta_star : Coordinates and orientation of the target point B.
+  k_rho, k_alpha, k_beta : Controller gains.
+
+  Returns:
+  V (linear velocity), W (angular velocity)
+  """
+
+  # Calculate the errors
+  dx = x_star - x_a
+  dy = y_star - y_a
+  rho = math.sqrt(dx**2 + dy**2)
+  alpha = math.atan2(dy, dx) - theta_a
+  beta = math.atan2(dy, dx) - theta_star
+
+  # Normalize angles to the range [-pi, pi]
+  alpha = normalize_angle(alpha)
+  beta = normalize_angle(beta)
+
+  # Calculate control commands
+  V = k_rho * rho
+  W = k_alpha * alpha + k_beta * beta
+
+  return V, W
+
+
+def normalize_angle(angle):
+  """
+  Normalize an angle to the range [-pi, pi].
+
+  Parameters:
+  angle : The angle to normalize.
+
+  Returns:
+  Normalized angle.
+  """
+  while angle > math.pi:
+    angle -= 2 * math.pi
+  while angle < -math.pi:
+    angle += 2 * math.pi
+  return angle
+    
     
 def find_closest_two(matrix, coord):
   # Validate input
@@ -340,6 +391,7 @@ def main():
   # shutdown ROS and wait for the node thread to finish
   rclpy.shutdown()
   node_thread.join()
+  
   
 if __name__ == '__main__':
   main()
